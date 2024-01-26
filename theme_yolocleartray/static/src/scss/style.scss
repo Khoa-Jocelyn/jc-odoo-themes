@@ -1,0 +1,166 @@
+/* START TOP NAVBAR */
+.yolo-top-navbar {
+	background-color: #ff9000;
+	color: #FFF;
+	height: 40px;
+	line-height: 40px;
+	position: relative;
+	z-index: 10000;
+}
+.yolo-top-navbar .container {
+	position: relative;
+}
+.o_searchbar_form .o_dropdown_menu .o_search_result_item {
+	border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+.o_searchbar_form .o_dropdown_menu .o_search_result_item div {
+    margin-right: 7px;
+}
+.o_searchbar_form .o_dropdown_menu .o_search_result_item img {
+    margin-left: 7px;
+}
+.o_searchbar_form .o_dropdown_menu .o_search_result_item .o_search_result_item_detail {
+	margin-top: 7px;
+	margin-bottom: 7px;
+}
+.yolo-top-navbar .hotline{ 
+	background: url("/theme_yolocleartray/static/src/img/phone.png") no-repeat left;
+	padding-left: 33px;
+	font-size: 12px;
+}
+.yolo-top-navbar .hotline .item{
+	display: inline-block;
+	padding: 0 13px 0 13px;
+	position: relative;
+	font-weight: bold;
+}
+.yolo-top-navbar .hotline .item:after{
+	content: "";
+	display: block;
+	position: absolute;
+	width: 1px;
+	height: 12px;
+	top: 13px;
+	left: 0;
+	background-color: #FFF;
+}
+.yolo-top-navbar .hotline .item:first-child{
+	padding-left: 0;
+}
+.yolo-top-navbar .hotline .item:first-child:after{
+	display: none;
+}
+.yolo-top-navbar .hotline .item a{
+	font-family: "SVN-GothamBold"; color: #FFF;
+}
+.yolo-top-navbar .hotline a i{
+	width: 24px;
+	height: 24px;
+	text-align: center;
+	line-height: 24px;
+	background-color: #FFF;
+	border-radius: 50%;
+}
+.yolo-top-navbar .social{
+	float: right;
+	padding-left: 8px;
+	line-height: 100%;
+	font-size: 12px;
+	height: 38px;
+	display: flex;
+	align-items: center;
+}
+.yolo-top-navbar .social a{
+	display: inline-block;
+	text-align: left;
+	margin-left: 7px;
+}
+.yolo-top-navbar .social a i{
+	width: 24px;
+	height: 24px;
+	text-align: center;
+	line-height: 24px;
+	background-color: #FFF;
+	border-radius: 50%;
+}
+.yolo-top-navbar .open{
+	float: right;
+	font-size: 12px;
+}
+.yolo-top-navbar .open .item{
+	display: inline-block;
+	padding: 0 13px 0 13px;
+	position: relative;
+}
+.yolo-top-navbar .open .item:after{
+	content: "";
+	display: block;
+	position: absolute;
+	width: 1px;
+	height: 18px;
+	top: 10px;
+	right: 0;
+	background-color: #ff9000;
+}
+.yolo-top-navbar .open .item span{
+	font-family: "SVN-GothamBold";
+}
+/* END TOP NAVBAR */
+
+/* START HEADER */
+header .yolo-navbar-brand.logo img {
+	height: 80px;
+    width: 100%;
+    filter: initial;
+}
+/* END HEADER */
+
+.corner-buttons {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.corner-buttons a {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background-color: #3498db;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Thêm transition cho transform */
+}
+
+.corner-buttons a img {
+    width: 100%; /* Đảm bảo hình ảnh lấp đầy toàn bộ nút */
+    border-radius: 50%; /* Đảm bảo hình ảnh có hình dạng hình tròn */
+}
+
+.corner-buttons a:hover {
+    background-color: #2980b9;
+    transform: scale(1.2); /* Tăng kích thước khi di chuột vào */
+}
+.o_snippet_not_selectable {
+	overflow: hidden;
+    position: relative;
+}
+.o_snippet_not_selectable img{
+	width: 100%;
+	transition: filter .6s,opacity .6s, transform .6s, box-shadow .3s; /* Thêm transition cho transform */
+}
+.o_snippet_not_selectable img:hover {
+    transform: scale(1.1); /* Tăng kích thước khi di chuột vào */
+}
+

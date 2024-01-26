@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="0">
+
+		<!-- SHOPPING CART -->
+        <template id="header_shopping_cart" inherit_id="website_sale.header_cart_link" name="Shoping Cart">
+        	<xpath expr="//a[@href='/shop/cart']/parent::li" position="attributes">
+        		<attribute name="t-attf-class" remove="align-self-md-start" separator=" "/>
+        	</xpath>
+        	<xpath expr="//i[@t-if='_icon']" position="replace">
+        		<i t-if="_icon" class="fa fa-shopping-basket"/>
+        	</xpath>
+	    </template>
+
+		<template id="yolo_option_header_brand_logo" inherit_id="website.option_header_brand_logo" name="Header Brand Logo">
+		    <xpath expr="//a[@t-attf-class='navbar-brand logo #{_link_class}']" position="replace">
+		        <a href="/" t-attf-class="yolo-navbar-brand logo #{_link_class}">
+		            <span t-field="website.logo" t-options="{'widget': 'image', 'width': 95, 'height': 40}" role="img" t-att-aria-label="'Logo of %s' % website.name" t-att-title="website.name"/>
+		        </a>
+		    </xpath>
+		</template>
+
+		<!-- USER DROPDOWN -->
+		<template id="yolo_user_dropdown" inherit_id="portal.user_dropdown" name="Yolo Cleartray User Dropdown" active="True">
+        	<xpath expr="//li[@t-if='is_connected']" position="replace">
+        		<t t-if="website">
+		            <t t-set="is_connected" t-value="website.user_id != user_id"/>
+		        </t>
+        		<div t-if="is_connected" t-attf-class="#{_item_class} o_no_autohide_item">
+	                <a href="#" role="button" data-bs-toggle="dropdown" t-attf-class="dropdown-toggle #{_link_class}">
+	                    <t t-if="_avatar">
+	                        <t t-set="avatar_source" t-value="image_data_uri(user_id.avatar_256)"/>
+	                        <img t-att-src="avatar_source" t-attf-class="rounded-circle o_object_fit_cover #{_avatar_class}" width="24" height="24" alt="" loading="eager"/>
+	                    </t>
+	                    <i t-if="_icon" t-attf-class="fa fa-1x fa-fw fa-user-circle-o #{_icon_class}"/>
+	                    <span t-if="_user_name" t-attf-class="#{_user_name_class}" t-esc="user_id.name[:23] + '...' if user_id.name and len(user_id.name) &gt; 25 else user_id.name"/>
+	                </a>
+	                <div t-attf-class="dropdown-menu js_usermenu #{_dropdown_menu_class}" role="menu">
+	                    <a groups="base.group_user" href="/web" role="menuitem" class="dropdown-item ps-3" id="o_backend_user_dropdown_link">
+	                        <i class="fa fa-fw fa-th me-1 small text-muted"/> Apps
+	                    </a>
+	                    <a href="/my/home" role="menuitem" class="dropdown-item ps-3">
+			                <i class="fa fa-fw fa-id-card-o me-1 small text-muted"/> My Account
+			            </a>
+	                    <div id="o_logout_divider" class="dropdown-divider"/>
+	                    <a t-attf-href="/web/session/logout?redirect=/" role="menuitem" id="o_logout" class="dropdown-item ps-3">
+	                        <i class="fa fa-fw fa-sign-out me-1 small text-muted"/> Logout
+	                    </a>
+	                </div>
+	            </div>
+        	</xpath>
+	    </template>
+
+		<template id="navbar" inherit_id="website.navbar" name="Navbar">
+			<xpath expr="//t[@t-set='_navbar_expand_class']" position="replace">
+		    	<t t-set="_navbar_expand_class" t-value="_navbar_expand_class or 'navbar-expand-lg'"/>
+		    </xpath>
+		</template>
+
+        <!-- CUSTOM HEADER TEMPLATE -->
+        <template id="yolo_header_template" inherit_id="website.layout" name="Yolo Cleartray Header Template" active="False">
+            <xpath expr="//header" position="before">
+            	<!-- TOP NAVBAR -->
+               	<div class="yolo-top-navbar d-none d-lg-block">
+               		<div class="container justify-content-between">
+               			<div class="d-flex flex-md-row flex-wrap flex-md-nowrap w-100 align-items-center">
+		                    <!-- LEFT -->
+		                    <div class="yolo-top-navbar-left col-sm-6 text-start">
+		                        <div class="oe_structure oe_structure_solo" id="oe_structure_top_navbar_left"/>
+		                    </div>
+		                    <!-- RIGHT -->
+		                    <div class="yolo-top-navbar-right col-sm-6 text-end">
+		                        <div class="oe_structure oe_structure_solo" id="oe_structure_top_navbar_right"/>
+		                    </div>
+		                </div>
+               		</div>
+               	</div>
+            </xpath>
+            <xpath expr="//header//nav" position="replace">
+                <t t-call="theme_yolocleartray.navbar">
+                	<t t-set="_navbar_expand_class" t-valuef="navbar-expand-xl" />
+		            <t t-set="_navbar_classes" t-valuef="shadow-sm"/>
+		            <div id="top_menu_container" class="container">
+		                <!-- BRAND -->
+	                	<t t-call="website.placeholder_header_brand">
+		                    <t t-set="_link_class" t-valuef="d-xl-none me-0"/>
+		                </t>
+						<!-- NAVBAR TOGGLER -->
+		                <t t-call="website.navbar_toggler">
+		                    <t t-set="_toggler_class" t-valuef="ms-auto"/>
+		                </t>
+		                <!-- NAVBAR COLLAPSE -->
+		                <div id="top_menu_collapse" class="collapse navbar-collapse justify-content-center">
+		                    <t t-call="website.navbar_nav">
+		                        <t t-set="_nav_class" t-valuef="d-flex align-items-center"/>
+		                        <!-- MENU -->
+		                        <t t-set="i" t-value="1" />
+		                        <t t-set="menu_number" t-value="len(website.menu_id.child_id)" />
+		                        <t t-foreach="website.menu_id.child_id" t-as="submenu">
+		                            <t t-call="website.submenu">
+		                                <t t-set="item_class" t-valuef="nav-item"/>
+		                                <t t-set="link_class" t-valuef="nav-link"/>
+		                            </t>
+		                            <t t-if="i == (menu_number // 2)">
+		                            	<li role="presentation" class="nav-item d-none d-xl-block">
+		                            		<t t-call="website.placeholder_header_brand">
+							                    <t t-set="_link_class" t-valuef="d-flex nav-link"/>
+							                </t>
+		                            	</li>
+		                            </t>
+		                            <t t-set="i" t-value="i+1" />
+		                        </t>
+		                     	<!-- SHOPPING CART -->
+		                        <t t-call="theme_yolocleartray.header_shopping_cart">
+					                <t t-set="_icon" t-value="True"/>
+					                <t t-set="_item_class" t-value="'nav-item'"/>
+					                <t t-set="_link_class" t-value="'nav-link fw-bold'"/>
+					            </t>
+		                        <!-- SIGN IN -->
+		                        <t t-call="portal.placeholder_user_sign_in">
+		                            <t t-set="_item_class" t-valuef="nav-item"/>
+		                            <t t-set="_link_class" t-valuef="nav-link fw-bold"/>
+		                        </t>
+		                        <!-- CALL TO ACTION -->
+				                <t t-call="website.placeholder_header_call_to_action">
+				                    <t t-set="_btn_class" t-valuef="px-2"/>
+                            		<t t-set="_div_classes" t-valuef="d-none d-lx-block ms-lg-auto"/>
+				                </t>
+		                    </t>
+		                </div>
+		            </div>
+		        </t>
+            </xpath>
+			<xpath expr="//body" position="inside">
+				<div class="modal fade" id="booking_modal" tabindex="-1" aria-labelledby="booking_modal_label" aria-hidden="true">
+					<div class="modal-dialog">
+						<form action="/consultant-register" method="post">
+							<input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
+							<div class="modal-content">
+								<div class="modal-header" style="background-color: #ff9000; color: #fff;">
+									<span role="img" aria-label="Logo of My Website" title="My Website">
+										<img src="/theme_yolocleartray/static/src/img/logo.png" class="img img-fluid" width="95" height="40" alt="My Website" loading="lazy" style=""/>
+									</span>
+									<h5 class="modal-title px-2" id="booking_modal_label">Consultant Register</h5>
+									<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+								</div>
+								<div class="modal-body">
+									<div class="px-3">
+										<div class="s_website_form_rows row s_col_no_bgcolor">
+	                                    	<div class="mb-3">
+	                                    		<input id="name" type="text" class="form-control" name="name" placeholder="Name*" required=""/>
+	                                    	</div>
+	                                    	<div class="mb-3">
+	                                    		<input id="phone" type="text" class="form-control" name="phone" placeholder="Telephone*" required=""/>
+	                                    	</div>
+	                                    	<div class="mb-3">
+	                                    		<input id="email" type="text" class="form-control" name="email" placeholder="Email"/>
+	                                    	</div>
+	                                    	<div class="mb-3">
+	                                    		<input id="appointment_date" type="datetime-local" widget="datetime" class="form-control" name="appointment_date" placeholder="Appointment Date*" required=""/>
+	                                    	</div>
+	                                    	<div>
+	                                    		<textarea id="content" type="text" class="form-control" name="content" placeholder="Consulting Content" />
+	                                    	</div>
+										</div>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+									<button type="submit" class="btn btn-primary">Confirm</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+		        <div class="corner-buttons">
+				    <a href="tel:082 888 8689" target="_blank">
+				    	<img class="o_editable_media" src="/theme_yolocleartray/static/src/img/telephone.png" alt="Call" />
+				    </a>
+					<a href="https://chat.zalo.me/?c=9171543929300552539" target="_blank">
+						<img class="o_editable_media"
+							src="/theme_yolocleartray/static/src/img/zalo.png" alt="Zalo" />
+					</a>
+					<a data-bs-toggle="modal" data-bs-target="#booking_modal">
+						<img class="o_editable_media"
+							src="/theme_yolocleartray/static/src/img/calendar.png" alt="Book" />
+					</a>
+				</div>
+		    </xpath>
+        </template>
+
+		<template id="yolo_top_navbar_left_template" inherit_id="theme_yolocleartray.yolo_header_template"
+			name="Yolo Cleartray Top Navbar Left Template (oe_structure_top_navbar_left)" active="True">
+		    <xpath expr="//*[hasclass('oe_structure')][@id='oe_structure_top_navbar_left']" position="replace">
+		        <div class="oe_structure oe_structure_solo" id="oe_structure_top_navbar_left">
+		            <section class="s_text_block" data-snippet="s_text_block" data-name="Text">
+		                <div class="container">
+			            	<div class="hotline">
+			            		<span class="item"><a href="tel:0828888689">082 888 8689</a></span>
+			            		<span class="item"><a href="tel:0927777207">092 777 7207</a></span>
+			            	</div>
+		                </div>
+		            </section>
+		        </div>
+		    </xpath>
+		</template>
+
+		<template id="yolo_top_navbar_right_template" inherit_id="theme_yolocleartray.yolo_header_template"
+			name="Yolo Cleartray Top Navbar Right Template (oe_structure_top_navbar_right)" active="True">
+		    <xpath expr="//*[hasclass('oe_structure')][@id='oe_structure_top_navbar_right']" position="replace">
+		        <div class="oe_structure oe_structure_solo" id="oe_structure_top_navbar_right">
+		            <section class="s_text_block" data-snippet="s_text_block" data-name="Text">
+		                <div class="container">
+		                	<div class="modal fade" id="search_top_navbar_modal">
+								<div class="modal-dialog modal-lg pt-5">
+									<div class="modal-content mt-5">
+										<t t-call="website.website_search_box_input">
+											<t t-set="_form_classes" t-valuef="rounded-fill"/>
+											<t t-set="search_type" t-valuef="all" />
+											<t t-set="action" t-valuef="/website/search" />
+											<t t-set="search" t-value="original_search or search" />
+										</t>
+									</div>
+								</div>
+							</div>
+			                <div class="social">
+			                    <span>Search: </span>
+			                    <a href="#" data-bs-toggle="modal" data-bs-target="#search_top_navbar_modal" title="Search">
+			                    	<i class="fa fa-search"></i>
+			                    </a>
+			                    <a href="#" target="_blank">
+			                    	<img src="/theme_yolocleartray/static/src/img/facebook.png" class="o_editable_media" />
+			                    </a>
+			                    <a href="#" target="_blank">
+			                    	<img src="/theme_yolocleartray/static/src/img/instagram.png" class="o_editable_media" />
+			                    </a>
+			                    <a href="#" target="_blank">
+			                    	<img src="/theme_yolocleartray/static/src/img/youtube.png" class="o_editable_media" />
+			                    </a>
+			                    <!-- LANGUAGE SELECTOR -->
+			                    <t t-call="website.placeholder_header_language_selector">
+			                        <t t-set="_div_classes" t-valuef="my-auto d-flex md-lg-2"/>
+			                    </t>
+			                    <!-- USER DROPDOWN -->
+		                        <t t-call="theme_yolocleartray.yolo_user_dropdown">
+		                            <t t-set="_avatar" t-value="true"/>
+		                            <t t-set="_item_class" t-valuef="nav-item dropdown md-lg-2"/>
+		                            <t t-set="_link_class" t-valuef="fw-bold"/>
+		                            <t t-set="_dropdown_menu_class" t-valuef="dropdown-menu-start"/>
+		                        </t>
+			                </div>
+			                <div class="open">
+			                    <span class="item">Open time: <span><b>8h00 - 20h00</b></span></span>
+			                </div>
+		                </div>
+		            </section>
+		        </div>
+		    </xpath>
+		</template>
+
+    </data>
+</odoo>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data noupdate="0">
+		<record id="logo_1" model="ir.attachment">
+			<field name="public" eval="True"/>
+			<field name="name">logo.png</field>
+			<field name="type">url</field>
+			<field name="url">/theme_yolocleartray/static/src/img/logo1.png</field>
+		</record>
+		<record id="telephone_icon" model="ir.attachment">
+			<field name="public" eval="True"/>
+			<field name="name">telephone.png</field>
+			<field name="type">url</field>
+			<field name="url">/theme_yolocleartray/static/src/img/telephone.png</field>
+		</record>
+		<record id="zalo_icon" model="ir.attachment">
+			<field name="public" eval="True"/>
+			<field name="name">zalo.png</field>
+			<field name="type">url</field>
+			<field name="url">/theme_yolocleartray/static/src/img/zalo.png</field>
+		</record>
+		<record id="calendar_icon" model="ir.attachment">
+			<field name="public" eval="True"/>
+			<field name="name">calendar.png</field>
+			<field name="type">url</field>
+			<field name="url">/theme_yolocleartray/static/src/img/calendar.png</field>
+		</record>
+	</data>
+</odoo>

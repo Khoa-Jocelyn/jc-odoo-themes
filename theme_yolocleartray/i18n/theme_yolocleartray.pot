@@ -1,0 +1,123 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* theme_yolocleartray
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-30 04:27+0000\n"
+"PO-Revision-Date: 2024-01-30 04:27+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: theme_yolocleartray
+#: model_terms:theme.ir.ui.view,arch:theme_yolocleartray.yolo_top_navbar_left_template
+msgid "082 888 8689"
+msgstr ""
+
+#. module: theme_yolocleartray
+#: model_terms:theme.ir.ui.view,arch:theme_yolocleartray.yolo_top_navbar_left_template
+msgid "092 777 7207"
+msgstr ""
+
+#. module: theme_yolocleartray
+#: model_terms:theme.ir.ui.view,arch:theme_yolocleartray.yolo_user_dropdown
+msgid "<i class=\"fa fa-fw fa-id-card-o me-1 small text-muted\"/> My Account"
+msgstr ""
+
+#. module: theme_yolocleartray
+#: model_terms:theme.ir.ui.view,arch:theme_yolocleartray.yolo_user_dropdown
+msgid "<i class=\"fa fa-fw fa-sign-out me-1 small text-muted\"/> Logout"
+msgstr ""
+
+#. module: theme_yolocleartray
+#: model_terms:theme.ir.ui.view,arch:theme_yolocleartray.yolo_user_dropdown
+msgid "<i class=\"fa fa-fw fa-th me-1 small text-muted\"/> Apps"
+msgstr ""
+
+#. module: theme_yolocleartray
+#: model_terms:theme.ir.ui.view,arch:theme_yolocleartray.yolo_top_navbar_right_template
+msgid "<span class=\"item\">Open time: <span><b>8h00 - 20h00</b></span></span>"
+msgstr ""
+
+#. module: theme_yolocleartray
+#: model_terms:theme.ir.ui.view,arch:theme_yolocleartray.yolo_top_navbar_right_template
+msgid "<span>Search: </span>"
+msgstr ""
+
+#. module: theme_yolocleartray
+#: model_terms:theme.ir.ui.view,arch:theme_yolocleartray.yolo_header_template
+msgid "Appointment Date*"
+msgstr ""
+
+#. module: theme_yolocleartray
+#: model_terms:theme.ir.ui.view,arch:theme_yolocleartray.yolo_header_template
+msgid "Book"
+msgstr ""
+
+#. module: theme_yolocleartray
+#: model_terms:theme.ir.ui.view,arch:theme_yolocleartray.yolo_header_template
+msgid "Call"
+msgstr ""
+
+#. module: theme_yolocleartray
+#: model_terms:theme.ir.ui.view,arch:theme_yolocleartray.yolo_header_template
+msgid "Close"
+msgstr ""
+
+#. module: theme_yolocleartray
+#: model_terms:theme.ir.ui.view,arch:theme_yolocleartray.yolo_header_template
+msgid "Confirm"
+msgstr ""
+
+#. module: theme_yolocleartray
+#: model_terms:theme.ir.ui.view,arch:theme_yolocleartray.yolo_header_template
+msgid "Consultant Register"
+msgstr ""
+
+#. module: theme_yolocleartray
+#: model_terms:theme.ir.ui.view,arch:theme_yolocleartray.yolo_header_template
+msgid "Consulting Content"
+msgstr ""
+
+#. module: theme_yolocleartray
+#. odoo-python
+#: code:addons/theme_yolocleartray/controllers/main.py:0
+#, python-format
+msgid "Consulting For Customers %s"
+msgstr ""
+
+#. module: theme_yolocleartray
+#: model_terms:theme.ir.ui.view,arch:theme_yolocleartray.yolo_header_template
+msgid "Email"
+msgstr ""
+
+#. module: theme_yolocleartray
+#: model_terms:theme.ir.ui.view,arch:theme_yolocleartray.yolo_header_template
+msgid "Name*"
+msgstr ""
+
+#. module: theme_yolocleartray
+#: model_terms:theme.ir.ui.view,arch:theme_yolocleartray.yolo_top_navbar_right_template
+msgid "Search"
+msgstr ""
+
+#. module: theme_yolocleartray
+#: model_terms:theme.ir.ui.view,arch:theme_yolocleartray.yolo_header_template
+msgid "Telephone*"
+msgstr ""
+
+#. module: theme_yolocleartray
+#: model:ir.model,name:theme_yolocleartray.model_theme_utils
+msgid "Theme Utils"
+msgstr ""
+
+#. module: theme_yolocleartray
+#: model_terms:theme.ir.ui.view,arch:theme_yolocleartray.yolo_header_template
+msgid "Zalo"
+msgstr ""
