@@ -1,0 +1,55 @@
+<odoo>
+	<data>
+		<record id="yolo_main_menu" model="website.menu">
+			<field name="name">Yolo - Main Menu</field>
+			<field name="url">/default-main-menu</field>
+			<field name="website_id" ref="website.default_website" />
+			<field name="sequence" type="int">0</field>
+		</record>
+		<record id="website.menu_home" model="website.menu">
+			<field name="parent_id" ref="yolo_main_menu" />
+			<field name="website_id" ref="website.default_website" />
+			<field name="sequence" type="int">10</field>
+		</record>
+		<record id="yolo_introduce_menu" model="website.menu">
+			<field name="name">Giới thiệu</field>
+			<field name="url">/introduce</field>
+			<field name="parent_id" ref="yolo_main_menu"/>
+			<field name="page_id" ref="theme_yolocleartray.yolo_introduce_page"/>
+			<field name="website_id" ref="website.default_website" />
+			<field name="sequence" type="int">20</field>
+		</record>
+		<record id="yolo_expert_menu" model="website.menu">
+			<field name="name">Chuyên gia</field>
+			<field name="url">/expect</field>
+			<field name="page_id" ref="theme_yolocleartray.yolo_expect_page"/>
+			<field name="website_id" ref="website.default_website" />
+			<field name="parent_id" ref="yolo_main_menu"/>
+			<field name="sequence" type="int">30</field>
+		</record>
+		<record id="website_sale.menu_shop" model="website.menu">
+			<field name="name">Sản phẩm</field>
+			<field name="website_id" ref="website.default_website" />
+			<field name="parent_id" ref="yolo_main_menu"/>
+			<field name="sequence" type="int">40</field>
+		</record>
+		<record id="website_event.menu_events" model="website.menu">
+			<field name="name">Đào tạo</field>
+			<field name="website_id" ref="website.default_website" />
+			<field name="parent_id" ref="yolo_main_menu"/>
+			<field name="sequence" type="int">50</field>
+		</record>
+		<record id="website_blog.menu_blog" model="website.menu">
+			<field name="name">Tin tức</field>
+			<field name="website_id" ref="website.default_website" />
+			<field name="parent_id" ref="yolo_main_menu"/>
+			<field name="sequence" type="int">60</field>
+		</record>
+		<record id="website.menu_contactus" model="website.menu">
+			<field name="name">Liên hệ</field>
+			<field name="website_id" ref="website.default_website" />
+			<field name="parent_id" ref="yolo_main_menu"/>
+			<field name="sequence" type="int">70</field>
+		</record>
+	</data>
+</odoo>

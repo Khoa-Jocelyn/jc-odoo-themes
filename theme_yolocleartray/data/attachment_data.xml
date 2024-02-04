@@ -1,29 +1,287 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 	<data noupdate="0">
-		<record id="logo_1" model="ir.attachment">
+		<!-- Logo -->
+		<record id="brand_yolo_logo" model="ir.attachment">
 			<field name="public" eval="True"/>
-			<field name="name">logo.png</field>
+			<field name="name">brand-logo.png</field>
 			<field name="type">url</field>
-			<field name="url">/theme_yolocleartray/static/src/img/logo1.png</field>
+			<field name="url">/theme_yolocleartray/static/src/img/logo/brand-logo.png</field>
 		</record>
+		<record id="white_yolo_logo" model="ir.attachment">
+			<field name="public" eval="True"/>
+			<field name="name">white-logo.png</field>
+			<field name="type">url</field>
+			<field name="url">/theme_yolocleartray/static/src/img/logo/white-logo.png</field>
+		</record>
+
+		<!-- Banner -->
+		<record id="home_banner_1" model="ir.attachment">
+			<field name="public" eval="True"/>
+			<field name="name">home-banner-01.png</field>
+			<field name="type">url</field>
+			<field name="url">/theme_yolocleartray/static/src/img/banner/home-banner-01.png</field>
+		</record>
+
+		<!-- Icon -->
 		<record id="telephone_icon" model="ir.attachment">
 			<field name="public" eval="True"/>
 			<field name="name">telephone.png</field>
 			<field name="type">url</field>
-			<field name="url">/theme_yolocleartray/static/src/img/telephone.png</field>
+			<field name="url">/theme_yolocleartray/static/src/img/icon/telephone.png</field>
 		</record>
-		<record id="zalo_icon" model="ir.attachment">
+		<record id="messenger_icon" model="ir.attachment">
 			<field name="public" eval="True"/>
-			<field name="name">zalo.png</field>
+			<field name="name">messenger.png</field>
 			<field name="type">url</field>
-			<field name="url">/theme_yolocleartray/static/src/img/zalo.png</field>
+			<field name="url">/theme_yolocleartray/static/src/img/icon/messenger.png</field>
 		</record>
 		<record id="calendar_icon" model="ir.attachment">
 			<field name="public" eval="True"/>
 			<field name="name">calendar.png</field>
 			<field name="type">url</field>
-			<field name="url">/theme_yolocleartray/static/src/img/calendar.png</field>
+			<field name="url">/theme_yolocleartray/static/src/img/icon/calendar.png</field>
 		</record>
+
+		<!-- Doctor -->
+		<record id="doctor_1" model="ir.attachment">
+			<field name="public" eval="True"/>
+			<field name="name">doctor-01.png</field>
+			<field name="type">url</field>
+			<field name="url">/theme_yolocleartray/static/src/img/doctor/doctor-01.png</field>
+		</record>
+		<record id="doctor_2" model="ir.attachment">
+			<field name="public" eval="True"/>
+			<field name="name">doctor-02.png</field>
+			<field name="type">url</field>
+			<field name="url">/theme_yolocleartray/static/src/img/doctor/doctor-02.png</field>
+		</record>
+		<record id="doctor_3" model="ir.attachment">
+			<field name="public" eval="True"/>
+			<field name="name">doctor-03.png</field>
+			<field name="type">url</field>
+			<field name="url">/theme_yolocleartray/static/src/img/doctor/doctor-03.png</field>
+		</record>
+		<record id="doctor_4" model="ir.attachment">
+			<field name="public" eval="True"/>
+			<field name="name">doctor-04.png</field>
+			<field name="type">url</field>
+			<field name="url">/theme_yolocleartray/static/src/img/doctor/doctor-04.png</field>
+		</record>
+
+		<!-- Background -->
+		<record id="background_1" model="ir.attachment">
+			<field name="public" eval="True"/>
+			<field name="name">background-1.png</field>
+			<field name="type">url</field>
+			<field name="url">/theme_yolocleartray/static/src/img/background/background-1.png</field>
+		</record>
+		<record id="background_2" model="ir.attachment">
+			<field name="public" eval="True"/>
+			<field name="name">background-2.png</field>
+			<field name="type">url</field>
+			<field name="url">/theme_yolocleartray/static/src/img/background/background-2.png</field>
+		</record>
+		<record id="background_3" model="ir.attachment">
+			<field name="public" eval="True"/>
+			<field name="name">background-3.png</field>
+			<field name="type">url</field>
+			<field name="url">/theme_yolocleartray/static/src/img/background/background-3.png</field>
+		</record>
+
+		<!-- Customer -->
+		<record id="customer_1" model="ir.attachment">
+			<field name="public" eval="True"/>
+			<field name="name">dung-nghe-chung-toi-noi-1.png</field>
+			<field name="type">url</field>
+			<field name="url">/theme_yolocleartray/static/src/img/customer/dung-nghe-chung-toi-noi-1.png</field>
+		</record>
+		<record id="customer_2" model="ir.attachment">
+			<field name="public" eval="True"/>
+			<field name="name">dung-nghe-chung-toi-noi-2.png</field>
+			<field name="type">url</field>
+			<field name="url">/theme_yolocleartray/static/src/img/customer/dung-nghe-chung-toi-noi-2.png</field>
+		</record>
+		<record id="customer_3" model="ir.attachment">
+			<field name="public" eval="True"/>
+			<field name="name">dung-nghe-chung-toi-noi-3.png</field>
+			<field name="type">url</field>
+			<field name="url">/theme_yolocleartray/static/src/img/customer/dung-nghe-chung-toi-noi-3.png</field>
+		</record>
+		<record id="customer_4" model="ir.attachment">
+			<field name="public" eval="True"/>
+			<field name="name">dung-nghe-chung-toi-noi-4.png</field>
+			<field name="type">url</field>
+			<field name="url">/theme_yolocleartray/static/src/img/customer/dung-nghe-chung-toi-noi-4.png</field>
+		</record>
+		<record id="customer_5" model="ir.attachment">
+			<field name="public" eval="True"/>
+			<field name="name">dung-nghe-chung-toi-noi-5.png</field>
+			<field name="type">url</field>
+			<field name="url">/theme_yolocleartray/static/src/img/customer/dung-nghe-chung-toi-noi-5.png</field>
+		</record>
+		<record id="customer_6" model="ir.attachment">
+			<field name="public" eval="True"/>
+			<field name="name">dung-nghe-chung-toi-noi-6.png</field>
+			<field name="type">url</field>
+			<field name="url">/theme_yolocleartray/static/src/img/customer/dung-nghe-chung-toi-noi-6.png</field>
+		</record>
+		<record id="customer_7" model="ir.attachment">
+			<field name="public" eval="True"/>
+			<field name="name">dung-nghe-chung-toi-noi-7.png</field>
+			<field name="type">url</field>
+			<field name="url">/theme_yolocleartray/static/src/img/customer/dung-nghe-chung-toi-noi-7.png</field>
+		</record>
+		<record id="customer_8" model="ir.attachment">
+			<field name="public" eval="True"/>
+			<field name="name">dung-nghe-chung-toi-noi-8.png</field>
+			<field name="type">url</field>
+			<field name="url">/theme_yolocleartray/static/src/img/customer/dung-nghe-chung-toi-noi-8.png</field>
+		</record>
+
+		<!-- Compare PC -->
+		<record id="pc_before_and_after_1" model="ir.attachment">
+			<field name="public" eval="True"/>
+			<field name="name">pc-truoc-sau-nieng-01.png</field>
+			<field name="type">url</field>
+			<field name="url">/theme_yolocleartray/static/src/img/customer/pc-truoc-sau-nieng-01.png</field>
+		</record>
+		<record id="pc_before_and_after_2" model="ir.attachment">
+			<field name="public" eval="True"/>
+			<field name="name">pc-truoc-sau-nieng-02.png</field>
+			<field name="type">url</field>
+			<field name="url">/theme_yolocleartray/static/src/img/customer/pc-truoc-sau-nieng-02.png</field>
+		</record>
+		<record id="pc_before_and_after_3" model="ir.attachment">
+			<field name="public" eval="True"/>
+			<field name="name">pc-truoc-sau-nieng-03.png</field>
+			<field name="type">url</field>
+			<field name="url">/theme_yolocleartray/static/src/img/customer/pc-truoc-sau-nieng-03.png</field>
+		</record>
+		<record id="pc_before_and_after_4" model="ir.attachment">
+			<field name="public" eval="True"/>
+			<field name="name">pc-truoc-sau-nieng-04.png</field>
+			<field name="type">url</field>
+			<field name="url">/theme_yolocleartray/static/src/img/customer/pc-truoc-sau-nieng-04.png</field>
+		</record>
+
+		<!-- Compare Mobile -->
+		<record id="mobile_before_and_after_1" model="ir.attachment">
+			<field name="public" eval="True"/>
+			<field name="name">mobile-truoc-sau-nieng-01.png</field>
+			<field name="type">url</field>
+			<field name="url">/theme_yolocleartray/static/src/img/customer/mobile-truoc-sau-nieng-01.png</field>
+		</record>
+		<record id="mobile_before_and_after_2" model="ir.attachment">
+			<field name="public" eval="True"/>
+			<field name="name">mobile-truoc-sau-nieng-02.png</field>
+			<field name="type">url</field>
+			<field name="url">/theme_yolocleartray/static/src/img/customer/mobile-truoc-sau-nieng-02.png</field>
+		</record>
+		<record id="mobile_before_and_after_3" model="ir.attachment">
+			<field name="public" eval="True"/>
+			<field name="name">mobile-truoc-sau-nieng-03.png</field>
+			<field name="type">url</field>
+			<field name="url">/theme_yolocleartray/static/src/img/customer/mobile-truoc-sau-nieng-03.png</field>
+		</record>
+		<record id="mobile_before_and_after_4" model="ir.attachment">
+			<field name="public" eval="True"/>
+			<field name="name">mobile-truoc-sau-nieng-04.png</field>
+			<field name="type">url</field>
+			<field name="url">/theme_yolocleartray/static/src/img/customer/mobile-truoc-sau-nieng-04.png</field>
+		</record>
+
+		<!-- Yolo Info -->
+		<record id="yolo_cleartray_info_1" model="ir.attachment">
+			<field name="public" eval="True"/>
+			<field name="name">yolo-cleartray-1.png</field>
+			<field name="type">url</field>
+			<field name="url">/theme_yolocleartray/static/src/img/product/yolo-cleartray-1.png</field>
+		</record>
+		<record id="yolo_cleartray_info_2" model="ir.attachment">
+			<field name="public" eval="True"/>
+			<field name="name">yolo-cleartray-2.png</field>
+			<field name="type">url</field>
+			<field name="url">/theme_yolocleartray/static/src/img/product/yolo-cleartray-2.png</field>
+		</record>
+
+		<!-- Service link -->
+		<record id="service_link_1" model="ir.attachment">
+			<field name="public" eval="True"/>
+			<field name="name">lien-ket-dich-vu-1.png</field>
+			<field name="type">url</field>
+			<field name="url">/theme_yolocleartray/static/src/img/service/lien-ket-dich-vu-1.png</field>
+		</record>
+		<record id="service_link_2" model="ir.attachment">
+			<field name="public" eval="True"/>
+			<field name="name">lien-ket-dich-vu-2.png</field>
+			<field name="type">url</field>
+			<field name="url">/theme_yolocleartray/static/src/img/service/lien-ket-dich-vu-2.png</field>
+		</record>
+		<record id="service_link_3" model="ir.attachment">
+			<field name="public" eval="True"/>
+			<field name="name">lien-ket-dich-vu-3.png</field>
+			<field name="type">url</field>
+			<field name="url">/theme_yolocleartray/static/src/img/service/lien-ket-dich-vu-3.png</field>
+		</record>
+		<record id="service_link_4" model="ir.attachment">
+			<field name="public" eval="True"/>
+			<field name="name">lien-ket-dich-vu-4.png</field>
+			<field name="type">url</field>
+			<field name="url">/theme_yolocleartray/static/src/img/service/lien-ket-dich-vu-4.png</field>
+		</record>
+
+		<!-- Yolo Distinctive -->
+		<record id="yolo_distinctive_1" model="ir.attachment">
+			<field name="public" eval="True"/>
+			<field name="name">yolo-khac-biet-1.png</field>
+			<field name="type">url</field>
+			<field name="url">/theme_yolocleartray/static/src/img/distinctive/yolo-khac-biet-1.png</field>
+		</record>
+		<record id="yolo_distinctive_2" model="ir.attachment">
+			<field name="public" eval="True"/>
+			<field name="name">yolo-khac-biet-2.png</field>
+			<field name="type">url</field>
+			<field name="url">/theme_yolocleartray/static/src/img/distinctive/yolo-khac-biet-2.png</field>
+		</record>
+		<record id="yolo_distinctive_3" model="ir.attachment">
+			<field name="public" eval="True"/>
+			<field name="name">yolo-khac-biet-3.png</field>
+			<field name="type">url</field>
+			<field name="url">/theme_yolocleartray/static/src/img/distinctive/yolo-khac-biet-3.png</field>
+		</record>
+		<record id="yolo_distinctive_4" model="ir.attachment">
+			<field name="public" eval="True"/>
+			<field name="name">yolo-khac-biet-4.png</field>
+			<field name="type">url</field>
+			<field name="url">/theme_yolocleartray/static/src/img/distinctive/yolo-khac-biet-4.png</field>
+		</record>
+
+		<!-- Yolo Introduce -->
+		<record id="yolo_introduce_1" model="ir.attachment">
+			<field name="public" eval="True"/>
+			<field name="name">introduce-01.png</field>
+			<field name="type">url</field>
+			<field name="url">/theme_yolocleartray/static/src/img/introduce/introduce-01.png</field>
+		</record>
+		<record id="yolo_introduce_2" model="ir.attachment">
+			<field name="public" eval="True"/>
+			<field name="name">introduce-02.png</field>
+			<field name="type">url</field>
+			<field name="url">/theme_yolocleartray/static/src/img/introduce/introduce-02.png</field>
+		</record>
+		<record id="yolo_introduce_3" model="ir.attachment">
+			<field name="public" eval="True"/>
+			<field name="name">introduce-03.png</field>
+			<field name="type">url</field>
+			<field name="url">/theme_yolocleartray/static/src/img/introduce/introduce-03.png</field>
+		</record>
+		<record id="yolo_introduce_4" model="ir.attachment">
+			<field name="public" eval="True"/>
+			<field name="name">introduce-04.png</field>
+			<field name="type">url</field>
+			<field name="url">/theme_yolocleartray/static/src/img/introduce/introduce-04.png</field>
+		</record>
+
 	</data>
 </odoo>

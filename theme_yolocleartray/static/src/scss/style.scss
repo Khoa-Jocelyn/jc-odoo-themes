@@ -27,7 +27,7 @@
 	margin-bottom: 7px;
 }
 .yolo-top-navbar .hotline{ 
-	background: url("/theme_yolocleartray/static/src/img/phone.png") no-repeat left;
+	background: url("/theme_yolocleartray/static/src/img/icon/phone.png") no-repeat left;
 	padding-left: 33px;
 	font-size: 12px;
 }
@@ -120,36 +120,33 @@ header .yolo-navbar-brand.logo img {
 
 .corner-buttons {
     position: fixed;
-    bottom: 20px;
-    left: 20px;
+    bottom: 30px;
+    left: 30px;
     display: flex;
     flex-direction: column;
+    background: #fff;
+    border-radius: 40px;
 }
 
 .corner-buttons a {
-    width: 50px;
-    height: 50px;
-    border: none;
-    border-radius: 50%;
-    background-color: #3498db;
+    width: 56px;
+    height: 56px;
     color: #fff;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 10px;
     text-decoration: none;
     transition: background-color 0.3s ease, transform 0.3s ease; /* Thêm transition cho transform */
 }
 
 .corner-buttons a img {
     width: 100%; /* Đảm bảo hình ảnh lấp đầy toàn bộ nút */
-    border-radius: 50%; /* Đảm bảo hình ảnh có hình dạng hình tròn */
+    //border-radius: 50%; /* Đảm bảo hình ảnh có hình dạng hình tròn */
 }
 
 .corner-buttons a:hover {
-    background-color: #2980b9;
     transform: scale(1.2); /* Tăng kích thước khi di chuột vào */
 }
 .o_snippet_not_selectable {
@@ -163,4 +160,14 @@ header .yolo-navbar-brand.logo img {
 .o_snippet_not_selectable img:hover {
     transform: scale(1.1); /* Tăng kích thước khi di chuột vào */
 }
-
+.carousel-item  {
+	overflow: hidden;
+    position: relative;
+}
+.carousel-item  img{
+	height: 768px;
+	transition: filter .6s,opacity .6s, transform .6s, box-shadow .3s; /* Thêm transition cho transform */
+}
+.carousel-item  img:hover {
+    transform: scale(1.1); /* Tăng kích thước khi di chuột vào */
+}

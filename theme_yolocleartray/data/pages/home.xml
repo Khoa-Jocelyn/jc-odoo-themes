@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data noupdate="1">
+		<template id="yolo_home_page_view" inherit_id="website.homepage" name="Home">
+			<xpath expr="//t[@t-call='website.layout']" position="replace">
+				<t t-call="website.layout">
+					<t t-set="pageName" t-value="'homepage'" />
+					<div id="wrap">
+						<!-- Banner slide section -->
+						<div class="oe_structure">
+							<section class="banner-slide-section" data-name="Banner slide section">
+								<div id="yolo-banner-slide" class="s_carousel s_carousel_default carousel-fade slide pointer-event" data-bs-interval="5000" data-name="Banner slide">
+									<!-- Indicators -->
+									<ol class="carousel-indicators o_we_no_overlay d-none" style="text-align: right;">
+										<li data-target="#yolo-banner-slide" data-slide-to="0" class="active" />
+									</ol>
+									<!-- Content -->
+									<div class="carousel-inner">
+										<div class="carousel-item o_colored_level o_cc o_cc2 s_parallax_no_overflow_hidden pt120 pb120 oe_img_bg o_bg_img_center active" 
+											style="background-position: 50% 0%; background-image: url('/web/image/theme_yolocleartray.home_banner_1'); min-height: 862px;"
+											data-name="Banner slide item" data-scroll-background-ratio="0">
+											<div class="oe_unremovable container-fluid">
+												<div class="row content o_grid_mode" data-row-count="7">
+													<div class="carousel-content o_colored_level o_grid_item g-col-lg-9 g-height-6 col-lg-6" style="z-index: 1; grid-area: 2 / 1 / 11 / 7;">
+														<h1 style="text-align: right;">
+															<font class="text-o-color-4">
+																<strong>
+																	<span style="font-size: 36px;">____</span>
+																</strong>
+															</font>
+														</h1>
+														<h1 style="text-align: right;">
+															<font class="text-o-color-4">
+																<strong>
+																	<span style="font-size: 64px;">Yolo Cleartray</span>
+																</strong>
+															</font>
+														</h1>
+														<h1 style="text-align: right;">
+															<strong>
+																<font class="text-o-color-4">
+																	<span style="font-size: 48px;">By Dr.Nguyễn Đại Phong</span>
+																</font>
+															</strong>
+														</h1>
+														<p style="text-align: right;">
+															<font class="text-o-color-4">
+																<span style="font-size: 36px;">Khay chỉnh nha duy nhất </span>
+																<strong>
+																	<span style="font-size: 36px;">nhận trong 24H</span>
+																</strong>
+															</font>
+														</p>
+														<p style="text-align: right;">
+															<a href="/contactus" target="_blank" class="btn btn-outline-custom text-o-color-4" data-bs-original-title="" title=""
+																style="border-width: 2px; border-style: solid; border-color: rgb(255, 255, 255);">
+																<font class="text-o-color-4">
+																	<span style="font-size: 18px;">TRẢI NGHIỆM NGAY</span>
+																</font>
+															</a>
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- Controls -->
+									<div class="carousel-control-prev" data-target="#yolo-banner-slide" data-slide="prev" role="img" aria-label="Previous" title="Previous">
+										<span class="carousel-control-prev-icon"/>
+										<span class="sr-only">Previous</span>
+									</div>
+									<div class="carousel-control-next" data-target="#yolo-banner-slide" data-slide="next" role="img" aria-label="Next" title="Next">
+										<span class="carousel-control-next-icon"/>
+										<span class="sr-only">Next</span>
+									</div>
+								</div>
+							</section>
+						</div>
+						<!-- Liên kết dịch vụ chủ chốt section -->
+						<div class="oe_structure">
+							<section class="s_title pt40 pb40 o_colored_level" data-vcss="001" data-snippet="s_title" data-name="Tiêu đề" style="background-image: none;">
+								<div class="s_allow_columns container">
+									<h1 style="text-align: center;">
+										<font style="font-size: 62px;" class="o_default_snippet_text text-o-color-2">
+											<strong>Yolo Cleartray</strong>
+										</font>
+									</h1>
+									<h2 style="text-align: center;">
+										<font class="text-o-color-2">
+											<strong>CUNG CẤP GIẢI PHÁP TOÀN DIỆN VỀ CHỈNH NHA</strong>
+										</font>
+									</h2>
+								</div>
+							</section>
+							<section class="s_image_gallery o_spc-small pt24 pb24 o_colored_level o_masonry"
+								data-vcss="001" data-columns="4" style="overflow: hidden; background-image: none;"
+								data-snippet="s_images_wall" data-name="Tường hình ảnh">
+								<div class="container">
+									<div class="row s_nb_column_fixed">
+										<div class="o_masonry_col o_snippet_not_selectable col-lg-3">
+											<a href="/expert" target="_blank">
+												<img src="/web/image/theme_yolocleartray.service_link_1" alt=""
+													class="img img-fluid d-block o_we_custom_image"
+													data-original-src="/web/image/theme_yolocleartray.service_link_1"
+													data-bs-original-title="" title="" loading="lazy" style=""/>
+											</a>
+										</div>
+										<div class="o_masonry_col o_snippet_not_selectable col-lg-3">
+											<a href="/product">
+												<img src="/web/image/theme_yolocleartray.service_link_2" alt=""
+													class="img img-fluid d-block o_we_custom_image"
+													data-original-src="/web/image/theme_yolocleartray.service_link_1"
+													data-bs-original-title="" title="" loading="lazy" style=""/>
+											</a>
+										</div>
+										<div class="o_masonry_col o_snippet_not_selectable col-lg-3">
+											<a href="/events">
+												<img src="/web/image/theme_yolocleartray.service_link_3" alt=""
+													class="img img-fluid d-block o_we_custom_image"
+													data-original-src="/web/image/theme_yolocleartray.service_link_3"
+													data-bs-original-title="" title="" loading="lazy" style=""/>
+											</a>
+										</div>
+										<div class="o_masonry_col o_snippet_not_selectable col-lg-3">
+											<a href="/product">
+												<img src="/web/image/theme_yolocleartray.service_link_4" alt=""
+													class="img img-fluid d-block o_we_custom_image"
+													data-original-src="/web/image/theme_yolocleartray.service_link_1"
+													data-bs-original-title="" title="" loading="lazy" style=""/>
+											</a>
+										</div>
+									</div>
+								</div>
+							</section>
+						</div>
+						<!-- Chuyên gia Yolo section -->
+						<div class="oe_structure">
+							<section class="s_text_image pt32 pb32 o_colored_level" data-snippet="s_image_text" data-name="Hình ảnh - Văn bản" style="background-image: none;">
+								<div class="container">
+									<div class="row align-items-center">
+										<div class="col-lg-6 pt16 pb16 o_colored_level">
+											<img src="/web/image/theme_yolocleartray.doctor_1"
+												class="img img-fluid mx-auto d-block" alt="" loading="lazy"
+												data-original-src="/web/image/theme_yolocleartray.doctor_1"
+												style="width: 100% !important;">
+											</img>
+										</div>
+										<div class="col-lg-6 pt16 pb16 o_colored_level">
+											<h2 class="o_default_snippet_text">
+												<font class="text-o-color-2">____</font>
+											</h2>
+											<h2 class="o_default_snippet_text">
+												<font class="text-o-color-2">
+													<strong>
+														<span style="font-size: 48px;">Dr.Nguyễn Đại Phong</span>
+													</strong>
+												</font>
+											</h2>
+											<h4 class="o_default_snippet_text mb-5">
+												<font class="text-o-color-2">
+													Chuyên gia <strong>chỉnh nha</strong> và <strong>đào tạo chỉnh nha</strong> chuyên sâu
+												</font>
+											</h4>
+											<h5 class="o_default_snippet_text">
+												<font class="text-o-color-2">
+													<strong>YOLO - TỰ HÀO</strong>
+												</font>
+												<font class="text-black">khay chỉnh nha trong suốt</font>
+											</h5>
+											<h5 class="o_default_snippet_text mb-5">
+												<font class="text-o-color-2">
+													<strong>BỜI NGƯỜI VIỆT - CHO NGƯỜI VIỆT</strong>
+												</font>
+											</h5>
+											<p>
+												<a href="#" class="btn btn-outline-custom text-o-color-2"
+													data-bs-original-title="" title="" target="_blank"
+													style="border-width: 2px; border-style: solid; border-color: rgb(249, 137, 54);">
+													<font class="text-o-color-2">TÌM HIỀU THÊM</font>
+												</a>
+											</p>
+										</div>
+									</div>
+								</div>
+							</section>
+						</div>
+						<!-- Tìm hiểu về Yolo section -->
+						<div class="oe_structure">
+							<section class="s_text_image pt32 o_colored_level pb56 oe_img_bg o_bg_img_center"
+								data-snippet="s_text_image" data-name="Văn bản - hình ảnh"
+								style="background-image: url(/web/image/theme_yolocleartray.background_1); position: relative;">
+								<div class="container">
+									<div class="row o_grid_mode" data-row-count="9">
+										<div class="o_colored_level o_grid_item o_grid_item_image g-col-lg-5 g-height-8 col-lg-5"
+											style="z-index: 2; grid-area: 2 / 7 / 10 / 12;">
+											<img src="/web/image/theme_yolocleartray.yolo_cleartray_info_1"
+												alt="" class="img img-fluid mx-auto o_we_custom_image rounded"
+												data-original-src="/web/image/theme_yolocleartray.yolo_cleartray_info_1"
+												data-bs-original-title="" title="" loading="lazy" data-shape="web_editor/special/spl_snow_1"
+												style="" />
+										</div>
+										<div
+											class="o_colored_level o_grid_item g-col-lg-5 g-height-8 col-lg-5"
+											style="z-index: 1; grid-area: 2 / 2 / 10 / 7;">
+											<p>
+												<span style="font-size: 48px;">
+													<strong>
+														<font class="text-o-color-2">YOLO KHÁC BIỆT</font>
+													</strong>
+												</span>
+											</p>
+											<p class="o_default_snippet_text" style="text-align: justify;">
+												<span style="font-size: 18px;">
+													<strong>
+														<font class="text-o-color-2">
+															<em>YOLO</em>
+														</font>
+														<font class="text-black">
+															<em>
+																<span style="font-weight: normal;">
+																	là thương hiệu khay niềng răng trong suốt đến từ Việt nam với
+																	chất lượng vượt trội so với các sản phẩm niềng răng hiện có
+																	trên thị trường với chi phí hợp lý, từ năm 2018 chúng tôi đã
+																	được các doanh nghiệp, phòng khám nha khoa trong nước đón nhận
+																	và tin dùng.
+																</span>
+															</em>
+														</font>
+													</strong>
+												</span>
+											</p>
+											<p class="o_default_snippet_text" style="text-align: justify;">
+												<a href="#" target="_blank"
+													class="btn btn-outline-custom text-o-color-2"
+													data-bs-original-title="" title=""
+													style="border-width: 2px; border-style: solid; border-color: rgb(249, 137, 54);">
+													<span style="font-size: 14px;">TÌM HIỂU THÊM</span>
+												</a>
+												<br />
+											</p>
+										</div>
+									</div>
+								</div>
+							</section>
+						</div>
+						<!-- Yolo khác biệt section -->
+						<div class="oe_structure">
+							<section class="s_text_block pt40 o_colored_level pb0 o_cc o_cc4"
+								data-snippet="s_text_block" data-name="Văn bản"
+								style="background-image: none;">
+								<div class="s_allow_columns container">
+									<div class="row o_grid_mode" data-row-count="3">
+										<div
+											class="o_colored_level o_grid_item g-col-lg-5 g-height-3 col-lg-5"
+											style="z-index: 1; grid-area: 1 / 2 / 4 / 7;">
+											<div class="o_text_columns">
+												<div class="row">
+													<div class="o_colored_level col-lg-3">
+														<p class="o_default_snippet_text">
+															<img src="/web/image/theme_yolocleartray.yolo_distinctive_1"
+																alt="" class="img img-fluid o_we_custom_image mx-auto d-block"
+																data-original-src="/web/image/theme_yolocleartray.yolo_distinctive_1"
+																data-bs-original-title="" title=""
+																aria-describedby="tooltip632045" loading="lazy" style="" />
+														</p>
+													</div>
+													<div class="o_colored_level col-lg-9">
+														<p style="text-align: justify;">
+															<font class="text-o-color-4">CÁ NHÂN HÓA KHAY NIỀNG RĂNG</font>
+														</p>
+														<p style="text-align: justify;">
+															<font class="text-o-color-4">
+																Khay niềng răng YOLO cho sự chính xác tuyệt đối
+																giúp rút ngắn thời gian niềng răng mà hiệu quả niềng răng không
+																thay đổi.
+															</font>
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="o_colored_level o_grid_item g-col-lg-5 g-height-3 col-lg-5"
+											style="z-index: 1; grid-area: 1 / 7 / 4 / 12;">
+											<div class="o_text_columns">
+												<div class="row">
+													<div class="o_colored_level col-lg-3">
+														<p class="o_default_snippet_text">
+															<img src="/web/image/theme_yolocleartray.yolo_distinctive_2"
+																alt="" class="img img-fluid o_we_custom_image mx-auto d-block"
+																data-original-src="/web/image/theme_yolocleartray.yolo_distinctive_2"
+																loading="lazy" style="" />
+														</p>
+													</div>
+													<div class="o_colored_level col-lg-9">
+														<p style="text-align: justify;">
+															<font class="text-o-color-4">THỜI GIAN GIAO KHAY TRONG 24H</font>
+														</p>
+														<p style="text-align: justify;">
+															<font class="text-o-color-4">Điều mà chưa một hãng nào trên thị trường hiện
+																nay có thể làm được.</font>
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+							<section class="s_text_block pb40 o_colored_level pb0 o_cc o_cc4"
+								data-snippet="s_text_block" data-name="Văn bản"
+								style="background-image: none;">
+								<div class="s_allow_columns container">
+									<div class="row o_grid_mode" data-row-count="3">
+										<div
+											class="o_colored_level o_grid_item g-col-lg-5 g-height-3 col-lg-5"
+											style="z-index: 1; grid-area: 1 / 2 / 4 / 7;">
+											<div class="o_text_columns">
+												<div class="row">
+													<div class="o_colored_level col-lg-3">
+														<p class="o_default_snippet_text">
+															<img src="/web/image/theme_yolocleartray.yolo_distinctive_3"
+																alt="" class="img img-fluid o_we_custom_image mx-auto d-block"
+																data-original-src="/web/image/theme_yolocleartray.yolo_distinctive_3"
+																data-bs-original-title="" title=""
+																aria-describedby="tooltip632045" loading="lazy" style="" />
+														</p>
+													</div>
+													<div class="o_colored_level col-lg-9">
+														<p style="text-align: justify;">
+															<font class="text-o-color-4">TIẾT KIỆM CHI PHÍ</font>
+														</p>
+														<p style="text-align: justify;">
+															<font class="text-o-color-4">
+																Kim chỉ nam của YOLO - "Nụ cười tự tin" cho mọi
+																người vì thế chỉ cần mọi người muốn cải thiện nụ cười có thể sử
+																dụng khay niềng răng của YOLO với chi phí phù hợp.
+															</font>
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="o_colored_level o_grid_item g-col-lg-5 g-height-3 col-lg-5"
+											style="z-index: 1; grid-area: 1 / 7 / 4 / 12;">
+											<div class="o_text_columns">
+												<div class="row">
+													<div class="o_colored_level col-lg-3">
+														<p class="o_default_snippet_text">
+															<img src="/web/image/theme_yolocleartray.yolo_distinctive_4"
+																alt="" class="img img-fluid o_we_custom_image mx-auto d-block"
+																data-original-src="/web/image/theme_yolocleartray.yolo_distinctive_4"
+																loading="lazy" style="" />
+														</p>
+													</div>
+													<div class="o_colored_level col-lg-9">
+														<p style="text-align: justify;">
+															<font class="text-o-color-4">ĐA DẠNG HOÁ CA LÂM SÀNG</font>
+														</p>
+														<p style="text-align: justify;">
+															<font class="text-o-color-4">
+																Ngoài việc điều chỉnh các cá sai khớp cắn, YOLO còn xử lý các tình huống
+																nha tiền phục hình, tái phát sau niềng răng , hỗ trợ kết thúc
+																sớm cho chỉnh nha mắc cài.
+															</font>
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+						</div>
+						<!-- Đùng nghe chúng tôi nói hãy tham khảo nhưng nụ cười này! section -->
+						<div class="oe_structure">
+							<section class="s_title pt40 pb40 o_colored_level" data-vcss="001" data-snippet="s_title" data-name="Tiêu đề" style="background-image: none;">
+								<div class="s_allow_columns container">
+									<h1 style="text-align: center;">
+										<font style="font-size: 48px;" class="o_default_snippet_text text-o-color-2">
+											Đừng nghe chúng tôi nói hãy tham khảo những nụ cười này!
+										</font>
+									</h1>
+								</div>
+							</section>
+						</div>
+						<!-- Trước và sau niềng răng section -->
+						<div class="oe_structure">
+							<section class="s_title pt40 pb40 o_colored_level" data-vcss="001" data-snippet="s_title" data-name="Tiêu đề" style="background-image: none;">
+								<div class="s_allow_columns container">
+									<h1 style="text-align: center;">
+										<font style="font-size: 48px;" class="o_default_snippet_text text-o-color-2">
+											Hình ảnh trước và sau niềng răng
+										</font>
+									</h1>
+								</div>
+							</section>
+						</div>
+						<!-- Đăng ký tư vấn section -->
+						<div class="oe_structure">
+							<section class="s_text_block pt40 pb40 o_colored_level oe_img_bg o_bg_img_center"
+								data-snippet="s_text_block" data-name="Văn bản" style="background-image: url(/web/image/theme_yolocleartray.background_1);">
+								<div class="s_allow_columns container-fluid">
+									<div class="row o_grid_mode" data-row-count="13">
+										<div class="o_grid_item o_colored_level g-col-lg-4 rounded o_cc o_cc1 border shadow g-height-12 col-lg-4"
+											style="z-index: 1; grid-area: 2 / 3 / 14 / 7; border-radius: 30px !important; border-width: 3px !important; box-shadow: rgba(0, 0, 0, 0.15) 0px 6px 10px 0px inset !important;">
+											<section class="s_text_block o_colored_level o_cc o_cc4 rounded border col-lg-12 pt32" style="border-radius: 30px !important; border-width: 3px !important;">
+												<p class="o_default_snippet_text" style="text-align: center;">
+													<span style="font-size: 18px;">
+														<strong>
+															<font class="text-o-color-4">
+																<span style="font-size: 20px;">ĐẶT LỊCH TƯ VẤN CÙNG CHUYÊN GIA</span>
+															</font>
+														</strong>
+													</span>
+												</p>
+												<p class="o_default_snippet_text" style="text-align: center;">
+													<font class="text-o-color-4">
+														<strong>
+															<span style="font-size: 30px;">TẠI YOLO CLEARTRAY</span>
+														</strong>
+													</font>
+												</p>
+												<p class="o_default_snippet_text" style="text-align: center;">
+													<font class="text-o-color-4">
+														<span style="font-size: 18px;">Và cơ hội xem trước nụ cười tương lai miễn phí</span>
+													</font>
+												</p>
+											</section>
+											<section class="s_website_form pt16 pb0" data-vcss="001" data-snippet="s_website_form" data-name="Mẫu">
+												<div class="container">
+													<form action="/website/form/" method="post" enctype="multipart/form-data" class="o_mark_required" data-mark="*"
+														data-pre-fill="true" data-success-mode="redirect" data-success-page="/contactus-thank-you" data-model_name="crm.lead">
+														<div class="s_website_form_rows row s_col_no_bgcolor">
+															<div data-visibility-condition="" data-visibility-between="" data-type="char" data-name="Field"
+																class="s_website_form_field mb-3 col-12 s_website_form_custom s_website_form_required pt24">
+																<label class="s_website_form_label d-none"
+																	style="width: 200px" for="contact_name">
+																	<span class="s_website_form_label_content">Họ và tên</span>
+																	<span class="s_website_form_mark"> *</span>
+																</label>
+																<input type="text"
+																	class="form-control s_website_form_input" name="Họ và tên"
+																	required="1" placeholder="Họ và tên*" id="contact_name"
+																	data-fill-with="undefined" />
+															</div>
+															<div data-visibility-condition="" data-visibility-between="" data-type="tel" data-name="Field"
+																class="s_website_form_field mb-3 col-12 s_website_form_custom s_website_form_required">
+																<label class="s_website_form_label d-none"
+																	style="width: 200px" for="phone">
+																	<span class="s_website_form_label_content">Số Điện thoại</span>
+																	<span class="s_website_form_mark"> *</span>
+																</label>
+																<input type="tel"
+																	class="form-control s_website_form_input" name="phone"
+																	required="1" value="" placeholder="Số điện thoại*" id="phone"
+																	data-fill-with="phone1" />
+															</div>
+															<div data-visibility-condition="" data-visibility-between="" data-type="datetime" data-name="Field"
+																class="s_website_form_field mb-3 col-12 s_website_form_custom s_website_form_required">
+																<label class="s_website_form_label d-none"
+																	style="width: 200px" for="booking_datetime">
+																	<span class="s_website_form_label_content">Ngày đặt lịch</span>
+																	<span class="s_website_form_mark"> *</span>
+																</label>
+																<div
+																	class="s_website_form_datetime input-group date s_website_form_datepicker_initialized"
+																	id="datetimepicker" data-target-input="nearest">
+																	<input type="text"
+																		class="form-control datetimepicker-input s_website_form_input"
+																		data-target="#datetimepicker" name="Ngày đặt lịch"
+																		required="1" placeholder="Ngày đặt lịch*"
+																		id="booking_datetime" data-fill-with="undefined" />
+																	<div class="input-group-text"
+																		data-target="#datetimepicker" data-toggle="datetimepicker">
+																		<i class="fa fa-calendar"></i>
+																	</div>
+																</div>
+															</div>
+															<div data-visibility-condition="" data-visibility-between="" data-type="text" data-name="Field"
+																class="s_website_form_field mb-3 col-12 s_website_form_custom">
+																<label class="s_website_form_label d-none" style="width: 200px" for="description">
+																	<span class="s_website_form_label_content">Câu hỏi của bạn</span>
+																</label>
+																<textarea class="form-control s_website_form_input" name="Câu hỏi của bạn" placeholder="Câu hỏi của bạn" id="description" rows="3"></textarea>
+															</div>
+															<div data-visibility-condition="" data-visibility-between="" data-type="char" data-name="Field"
+																class="s_website_form_field mb-3 col-12 s_website_form_model_required s_website_form_dnone">
+																<label class="s_website_form_label d-none" style="width: 200px" for="title">
+																	<span class="s_website_form_label_content">Tiêu đề</span>
+																	<span class="s_website_form_mark"> *</span>
+																</label>
+																<input type="text" class="form-control s_website_form_input" name="name" required="true" id="title"
+																	data-fill-with="undefined" placeholder="Tiêu đề"
+																	value="Đặt lịch tư vấn" />
+															</div>
+															<div class="s_website_form_field mb-3 col-12 s_website_form_dnone" data-name="Field">
+																<div class="row s_col_no_resize s_col_no_bgcolor">
+																	<label class="col-form-label col-sm-auto s_website_form_label " style="width: 200px">
+																		<span class="s_website_form_label_content"></span>
+																	</label>
+																	<div class="col-sm">
+																		<input type="hidden" class="form-control s_website_form_input" name="team_id" value="1" />
+																	</div>
+																</div>
+															</div>
+															<div class="s_website_form_field mb-3 col-12 s_website_form_dnone" data-name="Field">
+																<div class="row s_col_no_resize s_col_no_bgcolor">
+																	<label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px">
+																		<span class="s_website_form_label_content"></span>
+																	</label>
+																	<div class="col-sm">
+																		<input type="hidden" class="form-control s_website_form_input" name="user_id" value="2"/>
+																	</div>
+																</div>
+															</div>
+															<div class="mb-0 py-2 col-12 s_website_form_submit text-center s_website_form_no_submit_label" data-name="Submit Button">
+																<div style="width: 200px;" class="s_website_form_label"></div>
+																<a href="#" role="button" class="btn btn-primary btn-lg s_website_form_send o_default_snippet_text" data-bs-original-title="" title="">
+																	<font class="text-o-color-4">
+																		<em>
+																			<span style="font-size: 16px;">ĐĂNG KÝ NGAY</span>
+																		</em>
+																	</font>
+																</a>
+																<span id="s_website_form_result"></span>
+																<br />
+															</div>
+														</div>
+													</form>
+												</div>
+											</section>
+										</div>
+											<div class="o_grid_item o_grid_item_image o_colored_level g-col-lg-4 g-height-14 col-lg-4" style="z-index: 2; grid-area: 1 / 7 / 15 / 11;">
+												<img src="/web/image/theme_yolocleartray.doctor_3" alt=""
+													class="img img-fluid mx-auto o_we_custom_image"
+													data-original-src="/web/image/theme_yolocleartray.doctor_3"
+													loading="lazy" />
+										</div>
+									</div>
+								</div>
+							</section>
+						</div>
+					</div>
+				</t>
+			</xpath>
+	    </template>
+	</data>
+</odoo>

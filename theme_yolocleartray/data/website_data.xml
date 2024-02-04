@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data noupdate="1">
+		<record id="website.default_website" model="website">
+			<field name="name">Yolo Clear Tray</field>
+			<!-- <field name="domain">https://yolocleartray.com/</field> -->
+			<field name="company_id" ref="base.main_company"/>
+			<field name="user_id" ref="base.public_user"/>
+			<field name="favicon" type="base64" file="theme_yolocleartray/static/src/img/logo/brand-logo.png"/>
+			<field name="logo" type="base64" file="theme_yolocleartray/static/src/img/logo/brand-logo.png"/>
+		</record>
+	</data>
+	
+</odoo>

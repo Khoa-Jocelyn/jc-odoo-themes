@@ -82,9 +82,9 @@
 		            <t t-set="_navbar_classes" t-valuef="shadow-sm"/>
 		            <div id="top_menu_container" class="container">
 		                <!-- BRAND -->
-	                	<t t-call="website.placeholder_header_brand">
+	                	<!-- <t t-call="website.placeholder_header_brand">
 		                    <t t-set="_link_class" t-valuef="d-xl-none me-0"/>
-		                </t>
+		                </t> -->
 						<!-- NAVBAR TOGGLER -->
 		                <t t-call="website.navbar_toggler">
 		                    <t t-set="_toggler_class" t-valuef="ms-auto"/>
@@ -136,17 +136,18 @@
 					<div class="modal-dialog">
 						<form action="/consultant-register" method="post">
 							<input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
-							<div class="modal-content">
-								<div class="modal-header" style="background-color: #ff9000; color: #fff;">
-									<span role="img" aria-label="Logo of My Website" title="My Website">
-										<img src="/theme_yolocleartray/static/src/img/logo.png" class="img img-fluid" width="95" height="40" alt="My Website" loading="lazy" style=""/>
+							<div class="modal-content" style="border-radius: 20px;">
+								<div class="modal-header" style="border-top-left-radius: 20px; border-top-right-radius: 20px; background-color: #ff9000; color: #fff;">
+									<span role="img" aria-label="Logo of Yolo Clear Tray" title="Yolo Clear Tray">
+										<img src="/theme_yolocleartray/static/src/img/logo/white-logo.png" class="img img-fluid" width="95" height="40" alt="My Website" loading="lazy" style=""/>
 									</span>
 									<h5 class="modal-title px-2" id="booking_modal_label">Consultant Register</h5>
-									<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+									<!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
 								</div>
 								<div class="modal-body">
 									<div class="px-3">
 										<div class="s_website_form_rows row s_col_no_bgcolor">
+											<input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
 	                                    	<div class="mb-3">
 	                                    		<input id="name" type="text" class="form-control" name="name" placeholder="Name*" required=""/>
 	                                    	</div>
@@ -173,18 +174,37 @@
 						</form>
 					</div>
 				</div>
-		        <div class="corner-buttons">
-				    <a href="tel:082 888 8689" target="_blank">
-				    	<img class="o_editable_media" src="/theme_yolocleartray/static/src/img/telephone.png" alt="Call" />
-				    </a>
+		        <div class="corner-buttons py-2 px-3">
+		        	<a data-bs-toggle="modal" data-bs-target="#booking_modal" class="mt-2">
+						<img class="o_editable_media" src="/theme_yolocleartray/static/src/img/icon/calendar.png" alt="Book" />
+					</a>
+					<p class="text-center mb-0">
+						<strong>
+							<font class="text-o-color-2">
+								<span style="font-size: 9px;">Đặt lịch</span>
+							</font>
+						</strong>
+					</p>
 					<a href="https://chat.zalo.me/?c=9171543929300552539" target="_blank">
-						<img class="o_editable_media"
-							src="/theme_yolocleartray/static/src/img/zalo.png" alt="Zalo" />
+						<img class="o_editable_media" src="/theme_yolocleartray/static/src/img/icon/messenger.png" alt="Messenger" />
 					</a>
-					<a data-bs-toggle="modal" data-bs-target="#booking_modal">
-						<img class="o_editable_media"
-							src="/theme_yolocleartray/static/src/img/calendar.png" alt="Book" />
-					</a>
+					<p class="text-center mb-0">
+						<strong>
+							<font class="text-o-color-2">
+								<span style="font-size: 9px;">Messenger</span>
+							</font>
+						</strong>
+					</p>
+					<a href="tel:082 888 8689" target="_blank">
+				    	<img class="o_editable_media" src="/theme_yolocleartray/static/src/img/icon/telephone.png" alt="Call" />
+				    </a>
+				    <p class="text-center mb-0">
+						<strong>
+							<font class="text-o-color-2">
+								<span style="font-size: 9px;">Gọi ngay</span>
+							</font>
+						</strong>
+					</p>
 				</div>
 		    </xpath>
         </template>
@@ -229,13 +249,13 @@
 			                    	<i class="fa fa-search"></i>
 			                    </a>
 			                    <a href="#" target="_blank">
-			                    	<img src="/theme_yolocleartray/static/src/img/facebook.png" class="o_editable_media" />
+			                    	<img src="/theme_yolocleartray/static/src/img/icon/facebook.png" class="o_editable_media" />
 			                    </a>
 			                    <a href="#" target="_blank">
-			                    	<img src="/theme_yolocleartray/static/src/img/instagram.png" class="o_editable_media" />
+			                    	<img src="/theme_yolocleartray/static/src/img/icon/instagram.png" class="o_editable_media" />
 			                    </a>
 			                    <a href="#" target="_blank">
-			                    	<img src="/theme_yolocleartray/static/src/img/youtube.png" class="o_editable_media" />
+			                    	<img src="/theme_yolocleartray/static/src/img/icon/youtube.png" class="o_editable_media" />
 			                    </a>
 			                    <!-- LANGUAGE SELECTOR -->
 			                    <t t-call="website.placeholder_header_language_selector">

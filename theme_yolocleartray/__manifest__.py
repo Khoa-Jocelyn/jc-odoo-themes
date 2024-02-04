@@ -7,17 +7,18 @@
     "category": "Theme/Corporate",
     "sequence": 130,
     "version": "0.1.0",
-    "depends": ['website_sale'],
+    "depends": ['website_sale', 'website_crm', 'website_event', 'website_blog'],
     "data": [
+        'data/website_data.xml',
         'data/attachment_data.xml',
+        'data/pages/home.xml',
+        'data/pages/introduce.xml',
+        'data/pages/expect.xml',
+        'data/menu_data.xml',
         'views/website_templates.xml',
     ],
-    "images": [
-    ],
+    "images": [],
     'assets': {
-        'web._assets_frontend_helpers': [
-            ('prepend', 'theme_yolocleartray/static/src/scss/bootstrap_overridden.scss'),
-        ],
         'web._assets_primary_variables': [
             'theme_yolocleartray/static/src/scss/mixins.scss',
         ],
