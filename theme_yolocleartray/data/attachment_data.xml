@@ -144,25 +144,25 @@
 			<field name="public" eval="True"/>
 			<field name="name">pc-truoc-sau-nieng-01.png</field>
 			<field name="type">url</field>
-			<field name="url">/theme_yolocleartray/static/src/img/customer/pc-truoc-sau-nieng-01.png</field>
+			<field name="url">/theme_yolocleartray/static/src/img/compare/pc/pc-truoc-sau-nieng-01.png</field>
 		</record>
 		<record id="pc_before_and_after_2" model="ir.attachment">
 			<field name="public" eval="True"/>
 			<field name="name">pc-truoc-sau-nieng-02.png</field>
 			<field name="type">url</field>
-			<field name="url">/theme_yolocleartray/static/src/img/customer/pc-truoc-sau-nieng-02.png</field>
+			<field name="url">/theme_yolocleartray/static/src/img/compare/pc/pc-truoc-sau-nieng-02.png</field>
 		</record>
 		<record id="pc_before_and_after_3" model="ir.attachment">
 			<field name="public" eval="True"/>
 			<field name="name">pc-truoc-sau-nieng-03.png</field>
 			<field name="type">url</field>
-			<field name="url">/theme_yolocleartray/static/src/img/customer/pc-truoc-sau-nieng-03.png</field>
+			<field name="url">/theme_yolocleartray/static/src/img/compare/pc/pc-truoc-sau-nieng-03.png</field>
 		</record>
 		<record id="pc_before_and_after_4" model="ir.attachment">
 			<field name="public" eval="True"/>
 			<field name="name">pc-truoc-sau-nieng-04.png</field>
 			<field name="type">url</field>
-			<field name="url">/theme_yolocleartray/static/src/img/customer/pc-truoc-sau-nieng-04.png</field>
+			<field name="url">/theme_yolocleartray/static/src/img/compare/pc/pc-truoc-sau-nieng-04.png</field>
 		</record>
 
 		<!-- Compare Mobile -->
@@ -170,25 +170,25 @@
 			<field name="public" eval="True"/>
 			<field name="name">mobile-truoc-sau-nieng-01.png</field>
 			<field name="type">url</field>
-			<field name="url">/theme_yolocleartray/static/src/img/customer/mobile-truoc-sau-nieng-01.png</field>
+			<field name="url">/theme_yolocleartray/static/src/img/compare/mobile/mobile-truoc-sau-nieng-01.png</field>
 		</record>
 		<record id="mobile_before_and_after_2" model="ir.attachment">
 			<field name="public" eval="True"/>
 			<field name="name">mobile-truoc-sau-nieng-02.png</field>
 			<field name="type">url</field>
-			<field name="url">/theme_yolocleartray/static/src/img/customer/mobile-truoc-sau-nieng-02.png</field>
+			<field name="url">/theme_yolocleartray/static/src/img/compare/mobile/mobile-truoc-sau-nieng-02.png</field>
 		</record>
 		<record id="mobile_before_and_after_3" model="ir.attachment">
 			<field name="public" eval="True"/>
 			<field name="name">mobile-truoc-sau-nieng-03.png</field>
 			<field name="type">url</field>
-			<field name="url">/theme_yolocleartray/static/src/img/customer/mobile-truoc-sau-nieng-03.png</field>
+			<field name="url">/theme_yolocleartray/static/src/img/compare/mobile/mobile-truoc-sau-nieng-03.png</field>
 		</record>
 		<record id="mobile_before_and_after_4" model="ir.attachment">
 			<field name="public" eval="True"/>
 			<field name="name">mobile-truoc-sau-nieng-04.png</field>
 			<field name="type">url</field>
-			<field name="url">/theme_yolocleartray/static/src/img/customer/mobile-truoc-sau-nieng-04.png</field>
+			<field name="url">/theme_yolocleartray/static/src/img/compare/mobile/mobile-truoc-sau-nieng-04.png</field>
 		</record>
 
 		<!-- Yolo Info -->
