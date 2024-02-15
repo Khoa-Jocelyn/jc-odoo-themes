@@ -68,6 +68,12 @@
 			<field name="type">url</field>
 			<field name="url">/theme_yolocleartray/static/src/img/doctor/doctor-04.png</field>
 		</record>
+		<record id="doctor_5" model="ir.attachment">
+			<field name="public" eval="True"/>
+			<field name="name">doctor-05.png</field>
+			<field name="type">url</field>
+			<field name="url">/theme_yolocleartray/static/src/img/doctor/doctor-05.png</field>
+		</record>
 
 		<!-- Background -->
 		<record id="background_1" model="ir.attachment">
