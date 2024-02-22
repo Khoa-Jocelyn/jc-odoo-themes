@@ -145,6 +145,44 @@
 			<field name="url">/theme_yolocleartray/static/src/img/customer/dung-nghe-chung-toi-noi-8.png</field>
 		</record>
 
+		<!-- feedback -->
+		<record id="feedback_1" model="ir.attachment">
+			<field name="public" eval="True"/>
+			<field name="name">dung-nghe-chung-toi-noi-8.png</field>
+			<field name="type">url</field>
+			<field name="url">/theme_yolocleartray/static/src/img/feedback/feedback-01.png</field>
+		</record>
+		<record id="feedback_2" model="ir.attachment">
+			<field name="public" eval="True"/>
+			<field name="name">dung-nghe-chung-toi-noi-8.png</field>
+			<field name="type">url</field>
+			<field name="url">/theme_yolocleartray/static/src/img/feedback/feedback-02.png</field>
+		</record>
+		<record id="feedback_3" model="ir.attachment">
+			<field name="public" eval="True"/>
+			<field name="name">dung-nghe-chung-toi-noi-8.png</field>
+			<field name="type">url</field>
+			<field name="url">/theme_yolocleartray/static/src/img/feedback/feedback-03.png</field>
+		</record>
+		<record id="feedback_4" model="ir.attachment">
+			<field name="public" eval="True"/>
+			<field name="name">dung-nghe-chung-toi-noi-8.png</field>
+			<field name="type">url</field>
+			<field name="url">/theme_yolocleartray/static/src/img/feedback/feedback-04.png</field>
+		</record>
+		<record id="feedback_5" model="ir.attachment">
+			<field name="public" eval="True"/>
+			<field name="name">dung-nghe-chung-toi-noi-8.png</field>
+			<field name="type">url</field>
+			<field name="url">/theme_yolocleartray/static/src/img/feedback/feedback-05.png</field>
+		</record>
+		<record id="feedback_6" model="ir.attachment">
+			<field name="public" eval="True"/>
+			<field name="name">dung-nghe-chung-toi-noi-8.png</field>
+			<field name="type">url</field>
+			<field name="url">/theme_yolocleartray/static/src/img/feedback/feedback-06.png</field>
+		</record>
+
 		<!-- Compare PC -->
 		<record id="pc_before_and_after_1" model="ir.attachment">
 			<field name="public" eval="True"/>

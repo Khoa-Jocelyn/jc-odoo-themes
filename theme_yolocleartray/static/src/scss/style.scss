@@ -145,10 +145,10 @@ header .yolo-navbar-brand.logo img {
     width: 100%; /* Đảm bảo hình ảnh lấp đầy toàn bộ nút */
     //border-radius: 50%; /* Đảm bảo hình ảnh có hình dạng hình tròn */
 }
-
 .corner-buttons a:hover {
     transform: scale(1.2); /* Tăng kích thước khi di chuột vào */
 }
+
 .o_snippet_not_selectable {
 	overflow: hidden;
     position: relative;
@@ -159,6 +159,9 @@ header .yolo-navbar-brand.logo img {
 }
 .o_snippet_not_selectable img:hover {
     transform: scale(1.1); /* Tăng kích thước khi di chuột vào */
+}
+.o_masonry_col {
+	padding: 1.5rem;
 }
 .carousel-item  {
 	overflow: hidden;
